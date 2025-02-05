@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery-item {
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.1);
+    }
+    audio {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Player</h1>
+  <div class="gallery">
+    <!-- Image and audio pair 1 -->
+    <div class="gallery-item" onclick="playAudio(1)">
+      <img src="img1.jpg" alt="Image 1">
+      <p>Audio 1</p>
+    </div>
+    <!-- Image and audio pair 2 -->
+    <div class="gallery-item" onclick="playAudio(2)">
+      <img src="img2.jpg" alt="Image 2">
+      <p>Audio 2</p>
+    </div>
+    <!-- Image and audio pair 3 -->
+    <div class="gallery-item" onclick="playAudio(3)">
+      <img src="img3.jpg" alt="Image 3">
+      <p>Audio 3</p>
+    </div>
+    <!-- Image and audio pair 4 -->
+    <div class="gallery-item" onclick="playAudio(4)">
+      <img src="img4.jpg" alt="Image 4">
+      <p>Audio 4</p>
+    </div>
+    <!-- Image and audio pair 5 -->
+    <div class="gallery-item" onclick="playAudio(5)">
+      <img src="img5.jpg" alt="Image 5">
+      <p>Audio 5</p>
+    </div>
+    <!-- Image and audio pair 6 -->
+    <div class="gallery-item" onclick="playAudio(6)">
+      <img src="img6.jpg" alt="Image 6">
+      <p>Audio 6</p>
+    </div>
+  </div>
+
+  <audio id="audioPlayer" controls>
+    <source id="audioSource" src="" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const audioFiles = [
+      "audio1.mp3",
+      "audio2.mp3",
+      "audio3.mp3",
+      "audio4.mp3",
+      "audio5.mp3",
+      "audio6.mp3"
+    ];
+
+    function playAudio(index) {
+      const audioPlayer = document.getElementById('audioPlayer');
+      const audioSource = document.getElementById('audioSource');
+      audioSource.src = audioFiles[index - 1];
+      audioPlayer.load();
+      audioPlayer.play();
+    }
+  </script>
+</body>
+</html>

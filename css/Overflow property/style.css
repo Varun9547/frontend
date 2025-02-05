@@ -1,0 +1,12 @@
+.box{
+    width: 10vw;
+    height: 10vh;
+    border: 3px solid black;
+    overflow: scroll;
+    /* overflow: auto; */  /*if overflow then show scroll */
+    /* white-space: nowrap; */
+    overflow: scroll hidden; /* first is x and secodn is y*/
+}
+body{
+    margin: 10px;
+}

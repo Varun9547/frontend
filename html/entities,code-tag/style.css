@@ -1,0 +1,14 @@
+code{
+    background-color: red;
+}
+
+
+/* difference between span and div is span is inline element and div is block element also span can be used to style a specific code oe line */
+#span{
+    background-color: red;
+}
+
+#div{
+    background-color: red;
+}
+/* benefit of writing your code in in html in code is you can style it with code selector in css */

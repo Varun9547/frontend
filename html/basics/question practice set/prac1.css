@@ -1,0 +1,24 @@
+div
+{
+    background-color: blue;
+}
+#box          /*you can use this also instead of above div*/
+{
+    background-color: blue;
+}
+
+.heading{
+    color: red;
+}
+#button{
+    color: green;
+}
+
+
+
+
+/*
+Universal selector  *{}
+Element selector    h1{}
+id selector         #id{}
+Class selector      .class{}

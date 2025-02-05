@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            /* now we will not use width: 1920px; as if someone have 2080px display our code will be teared */
+            /* thats why we use width: 100vw; vw means viewport ,means will be adjusted accordeing to display,but this is useful when want whole line block */
+            width: 80vw;
+            /* width: 50vw; by redcing width from 100 to 80 we remains some px for margin as 100vw will occur full block  */
+
+            margin: auto;
+            /* this margin auto and all this works for block level elements not for inline elements */
+            background-color: aqua;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            margin: 23px auto;
+            /* here 23px is used for upper and lower margin and the auto is for left right */
+            height: 80vh;
+            /* you can understand this vh and vw as like 80vh is 80% of veiwport ,means it will accquire 80% height of viewport of any display same for width also ,that's why when using margin auto for centering box we didnt use 100vw as it will accquire 100% width of viewport*/
+            background-color: aqua;
+        }
+
+        .mycont {
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">this is box</div>
+    <div class="container">
+        <p>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, at id excepturi ullam esse ad sed et? Sint
+            quisquam impedit deleniti, recusandae asperiores dolore similique porro maxime ut quod magnam amet
+            blanditiis officia harum eum, tempore laborum numquam hic iusto reprehenderit eos distinctio velit vel
+            illum! Sunt adipisci ab aliquid ducimus dolore aspernatur, blanditiis sequi obcaecati.
+        </p>
+    </div>
+
+    <div class="mycont">
+        i am another cont
+    </div>
+</body>
+
+</html>

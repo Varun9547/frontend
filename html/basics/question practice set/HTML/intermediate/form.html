@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/action_scripts.js">
+        <div class="form">
+            <h1>Form 1</h1>
+            <label for="second">First name:</label>
+            <input type="text" id="second" placeholder="Enter your name" maxlength="10">
+            <br><br>
+            <label for="Password">Password:</label>
+            <input type="Password" id="Password" placeholder="Enter your Password" autofocus>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <br><br>
+            <label for="number">Number:</label>
+            <input type="number" id="number" min="5" max="10" value="6" placeholder="enter your number">
+            <br><br>
+            <button type="submit">Submit</button>
+            <input type="submit" value="submits">
+            <!--both button and input will do same work-->
+            <button type="reset">Reset</button>
+            <input type="reset" value="resets">
+            <br><br>
+            <label for="checkpoint"></label>
+        </div>
+
+        <div class="textarea">
+            <h1>Form 2</h1>
+            <label for="textarea">Comment section</label>
+            <input type="textarea" name="" id="textarea">
+            <br><br>
+        </div>
+
+        <div class="checkbox">
+
+            <h1>Skills</h1>
+
+            <input type="checkbox" id="frontend">
+            <label for="frontend">frontend</label>
+
+            <input type="checkbox" id="backend">
+            <label for="backend">backend</label>
+
+            <input type="checkbox" id="python"> <!--in this syntax ,for and id should be unique for different checkboxes.
+            You can observe this mistake in radio button below where,for and id is same for each skill-->
+            <label for="python">python</label>
+            <input type="checkbox" id="AI/ML">
+            <label for="AI/ML">AI/ML</label>
+            <br><br>
+        </div>
+
+        <div class="radio">
+            <h1>Colour</h1>
+            <input type="radio" id="red" name="colour">
+            <label for="red">red</label>
+            <input type="radio" id="skills" name="colour">
+            <label for="skills">black</label>
+            <input type="radio" id="skills" name="colour">
+            <label for="skills">pink</label>
+            <input type="radio" id="skills" name="colour">
+            <label for="skills">yellow</label>
+            <br><br>
+        </div>
+
+        <div class="dropdown">
+            <label for="city">City:</label>
+            <select id="city">
+                <option value="">surat</option>
+                <option value="">vadodara</option>
+                <option value="">mumbai</option>
+                <option value="">banglore</option>
+            </select>
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

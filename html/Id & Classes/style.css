@@ -1,0 +1,13 @@
+.red{
+    background-color: aqua;
+}
+
+.yellow{
+    color: red;
+}
+
+#firstdiv{
+    background-color: blue;
+}
+
+/*this are selector, you can access ID by '#' and and classes by '.' */ 

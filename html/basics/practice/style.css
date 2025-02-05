@@ -1,0 +1,24 @@
+h1
+{
+    text-align:center;
+    text-decoration: red dotted underline;
+    font-weight:lighter;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    color: black;
+}
+p
+{
+    color: brown; 
+    text-align:left;
+}
+button
+{
+    color: purple;
+    background-color: blanchedalmond;
+}
+body
+{
+    background-color:antiquewhite;
+}
+
